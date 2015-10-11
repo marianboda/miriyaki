@@ -1,0 +1,39 @@
+\chapter{Zhodnotenie}
+
+V \ref{sucasnystav}. kapitole testovali, komentovali a hodnotili syntetizátory štyria hudobníci, ktorí pracujú so syntetizátormi často. Z ich skúseností, tak pozitívnych, ako aj negatívnych, som sa snažil vychádzať pri návrhu a implementácii vlastného syntetizátora, vyvarovať sa chýb, ktoré syntetizátory mali, a inšpirovať sa tým, v čom boli zaujímavé a kvalitné.
+
+Vzhľadom na to, že títo hudobníci sú z podobného prostredia a podobných štýlov a aj na to, že môj syntetizátor vychádza vo veľkej miere z ich skúseností a osobných preferencií, ich hodnotenia môjho syntetizátora nemožno pokladať za objektívne. Zároveň však cieľovou skupinou používateľov boli práve oni, takže ich spokojnosť budem považovať za meradlo úspešnosti tejto implementácie.
+
+\section{Hodnotenie}
+
+%\subsection{Silné stránky syntetizátora}
+Hudobníci uviedli nasledovné silné stránky implementovaného sntetizátora.
+
+\begin{itemize}
+\setlength{\itemsep}{-0.5ex}
+\item pekný, prehľadný, intuitívny dizajn,
+\item jednoduché ovládanie,
+\item kvalitné filtre,
+\item príjemná rezonancia, nepíska,
+\item možnosť zapojiť filtre sériovo/paralelne,
+\item veľká modulačná matica, prehľadná, veľa možností modulácií,
+\item dosť oscilátorov, obálok, LFO, filtrov, 
+\item veľmi dobre spravené základné oscilátory, znejú dobre od najnižších po najvyššie oktávy,
+\item nepuká pri zmene parametrov,
+\item zvuk presný, žiadne známky nekvality.
+\end{itemize}
+
+Z týchto hodnotení vyplýva, že sa veľmi dobre vydarilo grafické použivateľské prostredie. Hudobníci uviedli, že je estetické, prehľadné a intuitívne. Zo zvukových častí vyzdvihli kvalitu oscilátorov a aj kvalitu filtrov. 
+
+Medzi slabšími stránkami syntetizátora uvádzali hudobníci často absenciu určitých funkcionalít, ktoré nepatria medzi základné prvky subtraktívnej syntézy a ktorých implementácia je mimo rozsahu tejto práce. Boli to najmä PW, ring, frekvenčná modulácia, rôzne typy oscilátorov a filtrov a efekty. Beriem do úvahy tieto body ako inšpiráciu pre budúci vývoj, ale nepovažujem ich za nedostatky tejto práce.
+
+Medzi ďalšimi slabými stránkami uvádzajú absenciu parametrov na celkové ladenie a celkovú hlasitosť, absenciu synchronizácie LFO a prepínača monofónie a polyfónie. Tieto chýbajúce prvky sú rozširujúce ovládacie prvky, ktoré priamo nezvyšujú kvalitu zvuku a ani neovplyvňujú množinu možností využitia syntetizátora, ale skôr robia ovládanie o niečo pohodlnejším. V prípadných budúcich verziách syntetizátora sa budem snažiť tieto prvky implementovať.
+
+Posledné dve hudobníkmi uvedené slabé stránky boli veľká záťaž syntetizátora a obtiažnosť nastavovania parametrov presne na požadovanú hodnotu. Obidva tieto parametre sú závislé od konfigurácie použivateľského počítača. Problematiku vysokej záťaže som stručne opísal pri testovaní v predchádzajúcej kapitole. Presnosť nastavovania parametra v grafickom prostredí je závislé od citlivosti vstupného zariadenia. Pri použití laserovej myši s rozlíšením 1600~dpi tento problém nebol pozorovaný. Používatelia s optickými myšami alebo touch-padmi museli mať s ovládaním väčšie problémy. Preto pre odstránenie takýchto nedostatkov je dôležité priebežné testovanie na viacerých rôznych konfiguráciách. Odstránenie týchto dvoch nedostatkov bude pri implementácii ďalšej verzie prioritné.
+
+\subsection{Bodové hodnotenie}
+
+Hudobníci obodovali syntetizátor bodmi 6, 7,5, 8,5 a 9. Priemerné hodnotenie teda je $\sim$7,8. Viacerí sa vyjadrili, že pridaním rozširujúcich funkcií by toto hodnotenie bolo vyššie. 
+
+Hodnotenie hudobníkov a teda aj celú implementáciu syntetizátora považujem za veľmi úspešné. Priemerné hodnotenie 7,8 zodpovedá presne hodnoteniu syntetizátora \emph{SuperWave P8}, ktorý sa pri testovaní v tretej kapitole ukázal ako najlepší z dostupných freeware syntetizátorov. To ale neznamená, že mnou implementovaný syntetizátor by mal patriť medzi najlepšie syntetizátory vôbec, ale skôr že sa podľa hudobníkov kvalitou blíži ku komerčnej skupine syntetizátorov. Vo vyššie uvedených prípomienkach dostávam cenné rady ako syntetizátor ďalej skvalitňovať.
+

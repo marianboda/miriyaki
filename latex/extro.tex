@@ -1,0 +1,18 @@
+\chapter*{Záver}
+\addcontentsline{toc}{chapter}{Záver}
+
+
+
+Úlohou tejto práce bolo navrhnúť a implementovať subtraktívny syntetizátor pre rozhranie VST v jazyku C++. Aby som mohol opísať jednotlivé postupy a problematiky riešenia tejto úlohy, v prvej kapitole som stručne opísal históriu syntetizátorov od prvých experimentov cez prvé komerčne úspešné analógové až po dnešné digitálne a softvérové syntetizátory. Priblížil som architektúru a princípy fungovania syntetizátorov používajúcich rôzne typy syntézy a aj ich vzájomnú komunikáciu a používateľskú interakciu prostredníctvom rozhrania MIDI.
+
+V duhej kapitole sa venujem softvérovým syntetizátorom a rozhraniam pre ich použitie. Zameral som sa na rozhranie VST, priblížil som aj vývojový balík VST SDK určený pre vývoj syntetizátorov pre rozhranie VST. Stručne som spomenul aj iné spôsoby tvorby VST nástrojov. 
+
+V tretej kapitole som analyzoval súčasný stav voľne šíriteľných subtraktívnych VST syntetizátorov. Tu som vybral väčší počet serióznych produktov, a tie som dal testovať štyrom skúseným hudobníkom. Výsledky som vyhodnotil a vytvoril som zoznam dobrých vlastností, ktoré ma mali inšpirovať pri návrhu vlastného nástroja, a aj zoznam chýb a nedokonalostí, ktorým som sa mal v čo najväčšej miere vyhnúť.
+
+Návrh nástroja je podrobne popísaný vo štvrtej kapitole. Tu som opísal návrh architektúry, návrh komponentov a aj riešenie problémov objavujúcich sa vo fáze návrhu. Pri návrhu nástroja som kládol dôraz najmä na kvalitu implementovaných častí a jednoduchosť používania.
+
+Piata kapitola je venovaná implementácii syntetizátora. Okrem samotnej implementácie som podrobnejšie rozpísal problematiku optimalizácie kódu a navrhol som riešenia pre určité vzory neoptimálnych častí kódu.
+
+V šiestej kapitole uvádzam hodnotenia implementovaného syntetizátora od hudobníkov a vyhodnocujem úspešnosť implementácie vzhľadom na zadanie práce.
+
+Vypracovanie tejto práce bolo pre mňa veľmi zaujímavé a prínosné. Veľmi ma teší pozitívne hodnotenie hudobníkov z komunity Corenforce, bez pomoci ktorých by výsledok implementácie určite nebol taký úspešný. Syntetizátor som nazval Miriyaki a po drobných úpravách sa ho chystám zverejniť ako voľne šíriteľný softvér. Dúfam, že tento syntetizátor nájde uplatnenie v hudbe viacerých amatérskych producentov.
