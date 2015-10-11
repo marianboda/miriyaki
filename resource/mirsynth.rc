@@ -1,0 +1,86 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource."
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "\r\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// PNG
+//
+
+131                     PNG                     "osc_waves.png"
+132                     PNG                     "lfo_waves.png"
+129                     PNG                     "knob03.png"
+130                     PNG                     "sync.png"
+133                     PNG                     "lfo_mono.png"
+134                     PNG                     "filter_types.png"
+135                     PNG                     "filter_routing.png"
+128                     PNG                     "bg14.png"
+136                     PNG                     "modAmtKnob.png"
+137                     PNG                     "mod_destinations.png"
+138                     PNG                     "mod_sources.png"
+139                     PNG                     "dump.png"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// WAVETABLE
+//
+
+192                     WAVETABLE               "wavSaw.m"
+193                     WAVETABLE               "wavSquare.m"
+194                     WAVETABLE               "wavTriangle.m"
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
