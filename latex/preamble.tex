@@ -1,0 +1,83 @@
+\documentclass[a4paper,12pt]{report}
+\usepackage[slovak,english]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage{floatflt}
+\usepackage{color}
+\usepackage{soul}
+\usepackage{graphics}
+\definecolor{majko}{rgb}{0,0.5,0.3}
+
+
+\usepackage[absolute]{textpos}
+\setlength{\TPHorizModule}{1cm}
+\setlength{\TPVertModule}{1cm}
+
+\newcommand{\HRule}{\rule{\linewidth}{0.5mm}}
+
+%\usepackage{verbatim} 
+\usepackage{fancyvrb,relsize}
+
+\usepackage{ucs}
+\usepackage[T1]{fontenc}
+\usepackage[bitstream-charter]{mathdesign}
+\usepackage{anonchap}
+%\simplechapter
+%\simplechapterdelim
+
+%\linespread{1.05}         % Palatino needs more leading (space between lines)
+%\usepackage[inner=0cm,top=0cm,outer=0cm,bottom=2.5cm]{geometry}
+\addto\captionsenglish{%
+\renewcommand\bibname{Použitá literatúra}}
+\addto\captionsenglish{%
+\renewcommand\figurename{Obr.}}
+\addto\captionsenglish{%
+\renewcommand\contentsname{Obsah}}
+\simplechapter
+\renewcommand\simplechapterdelim{.}
+\setlength\topmargin{-0.5cm}
+\setlength\oddsidemargin{1.26cm}
+\setlength\evensidemargin{-0.04cm}
+\setlength\textwidth{15cm}
+\setlength\textheight{23.5cm}
+
+\usepackage{subfigure}
+\usepackage{amsmath}
+
+\usepackage{fancyhdr}
+
+\newcommand{\newfootnote}[1]{\linespread{1.0}\footnote{#1}}
+
+\setlength{\pretolerance}{500}
+\fancyhead{}
+\fancyfoot{}
+\sodef\boda{}{-0.1em}{1em plus1em}{2em plus.1em minus.1em}
+\rhead{Subtraktívny Syntetizátor VST}
+\rfoot{\thepage}
+\lhead{Marián Bo\boda{{\unichar{0271}}a}}
+
+%\addtolength{\skip\Afootins}{1.5mm}
+\fancypagestyle{plain}{%
+\fancyhf{} % clear all header and footer fields
+\fancyfoot[R]{\bfseries \thepage} % except the center
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+\renewcommand{\footskip}{1cm}}
+\renewcommand{\footskip}{1cm}
+\setlength{\skip\footins}{1cm}
+\linespread{1.5}
+
+\def\bq{\mbox{\kern.1ex\protect\raisebox{-1.3ex}[0pt][0pt]{''}\kern.1ex}}
+\def\eq{\mbox{\kern.1ex``\kern.1ex}}
+
+\pagestyle{fancy}
+
+\hyphenation{ener-giu tieto jedno-duchým naj-jed-no-duch-ším naj-jed-no-duch-ší
+cel-ko-vo klá-ve-so-vý kto-ré-ho-koľ-vek dis-po-nu-je ne-zme-ne-nej množ-stvo na-hra-té-ho
+spo-loč-nos-ti sek-ven-ce-rom po-trieb ke-dy-koľ-vek efek-tu spo-me-nu-tým po-cho-piť sku-pi-nu
+hos-tu no-vé-ho vy-so-ko-frek-ven-čné spô-so-bu-jú vzor-ko-va-ciu pri-ná-ša ob-me-dze-né prie-be-hy pou-ží-va-né
+sig-ná-lu sig-ná-lov po-sie-la ne-žia-dú-cich na-do-bú-da ma-te-riá-lov elek-tro-mag-ne-tic-ké-ho
+di-gi-tál-ne ori-gi-ná-lom za-čia-tku väč-ši-nou dlh-šom čo-koľ-vek kniž-ni-ce dis-po-nu-jú in-štruk-čná
+funk-cií far-by ne-zá-vis-lý naj-vyš-šie po-jed-ná-va ro-zo-be-rám naj-pou-ží-va-nej-šie spô-so-by
+ne-pod-po-ru-je tridsať kva-li-tu prin-cí-py ge-ne-ru-je opro-ti in-tu-i-tí-vne blo-kom roz-sa-hu zme-niť
+po-ly-fó-nie za-čiat-ku pe-rio-dic-ký naj-čas-tej-šia pre-slá-vil exis-tu-jú pro-stre-diach roz-miest-ne-nie
+ge-ne-ro-va-né pre-us-po-ria-da-ním pro-blé-my pro-ble-ma-ti-ky spo-me-nu-té di-gi-tál-na}
