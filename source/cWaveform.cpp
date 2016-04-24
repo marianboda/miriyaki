@@ -82,7 +82,7 @@ float cWaveform::getSawSample(float pPos, float exponent)
 	if (tableSize > 0)
 	{	
 		float Exp = exponent * 3 - 5.25;
-		float intPart, iWPos;
+		double intPart, iWPos;
 
 		if (Exp < 0.0f) Exp = 0.0f;
 		if (Exp >= 26.0f)
@@ -135,7 +135,7 @@ float cWaveform::getTriangleSample(float pPos, float exponent)
 	if (tableSize > 0)
 	{	
 		float Exp = exponent * 3 - 5.25;
-		float intPart, iWPos;
+		double intPart, iWPos;
 
 		if (Exp < 0.0f) Exp = 0.0f;
 		if (Exp >= 26.0f)
@@ -188,7 +188,7 @@ float cWaveform::getSquareSample(float pPos, float exponent)
 	if (tableSize > 0)
 	{	
 		float Exp = exponent * 3 - 5.25;
-		float intPart, iWPos;
+		double intPart, iWPos;
 
 		if (Exp < 0.0f) Exp = 0.0f;
 		if (Exp >= 26.0f)
@@ -243,7 +243,9 @@ float cWaveform::getNoiseSample(float pPos)
 }
 float cWaveform::getLfoSineSample(float pPos)
 {
-	tempFraction = modf((pPos * WAVEFORM_SIZE),&tempValue);
+	double v = tempValue;
+	tempFraction = modf((pPos * WAVEFORM_SIZE),&v);
+	tempValue = v;
 	tempValue2 = tempValue+1;
 	if (tempValue2 >= WAVEFORM_SIZE) tempValue2 = 0;
 
@@ -256,7 +258,9 @@ float cWaveform::getLfoSawSample(float pPos)
 }
 float cWaveform::getLfoTriangleSample(float pPos)
 {
-	tempFraction = modf((pPos * WAVEFORM_SIZE),&tempValue);
+	double v = tempValue;
+	tempFraction = modf((pPos * WAVEFORM_SIZE),&v);
+	tempValue = v;
 	tempValue2 = tempValue+1;
 	if (tempValue2 >= WAVEFORM_SIZE) tempValue2 = 0;
 
