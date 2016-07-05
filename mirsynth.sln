@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
-VisualStudioVersion = 14.0.23107.0
+VisualStudioVersion = 14.0.24720.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "miriyaki", "mirsynth.vcxproj", "{863D9E7E-5322-49C8-89BA-A761DC0EE438}"
 EndProject
@@ -31,8 +31,8 @@ Global
 		{863D9E7E-5322-49C8-89BA-A761DC0EE438}.oldComp|Win32.ActiveCfg = Release|Win32
 		{863D9E7E-5322-49C8-89BA-A761DC0EE438}.oldComp|Win32.Build.0 = Release|Win32
 		{863D9E7E-5322-49C8-89BA-A761DC0EE438}.oldComp|x64.ActiveCfg = old|Win32
-		{863D9E7E-5322-49C8-89BA-A761DC0EE438}.Release|Win32.ActiveCfg = Release|x64
-		{863D9E7E-5322-49C8-89BA-A761DC0EE438}.Release|Win32.Build.0 = Release|x64
+		{863D9E7E-5322-49C8-89BA-A761DC0EE438}.Release|Win32.ActiveCfg = Release|Win32
+		{863D9E7E-5322-49C8-89BA-A761DC0EE438}.Release|Win32.Build.0 = Release|Win32
 		{863D9E7E-5322-49C8-89BA-A761DC0EE438}.Release|x64.ActiveCfg = Release|x64
 		{863D9E7E-5322-49C8-89BA-A761DC0EE438}.Release|x64.Build.0 = Release|x64
 	EndGlobalSection
